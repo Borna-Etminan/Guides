@@ -43,7 +43,7 @@ This PDF guide includes:
 ## 🚀 How to Use
 
 1. Download the PDF:  
-   [Professional Linux Terminal Guide](YOUR_PDF_LINK_HERE)
+   [Professional Linux Terminal Guide](https://github.com/Borna-Etminan/Guides/blob/main/Linux%20Guide/Linux_Commands.pdf)
 2. Open it with any PDF reader.
 3. Practice each command in:
    - Linux Terminal
