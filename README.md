@@ -10,12 +10,6 @@ The goal of this repository is not just documentation, but clarity and mastery a
 
 ## 📂 Available Guides
 
-### 🐧 Linux Terminal Guide  
-📁 [`Linux-guide`](https://github.com/Borna-Etminan/Guides/tree/main/Linux%20Guide)  
-A practical introduction to Linux terminal commands, covering file management, processes, permissions, environment variables, package managers, and essential command-line tools.
-
----
-
 ### 🌿 Git Guide  
 📁 [`git-guide`](https://github.com/Borna-Etminan/Guides/tree/main/Git%20Guide)  
 A structured Git reference covering version control fundamentals, branching, merging, collaboration workflows, and real-world command usage.
@@ -49,6 +43,15 @@ Documenting my journey toward mastering development fundamentals.
 
 ---
 
+## 📫 Contact me
+* 📞 Phone: +989183820252
+* ✉️ Email: borna.etminan34@gmail.com
+* 📱 Telegram: https://t.me/BornaEtminan
+* ✉️ X acount: https://x.com/BornaEtminan
+* ✉️ Kaggle username: https://www.kaggle.com/bornaetminan
+* 📘 Blog on Substack: https://substack.com/@bornaetminan
+
+---
 ## 📄 License
 
 This repository is released under the MIT License.
