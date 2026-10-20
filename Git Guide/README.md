@@ -41,6 +41,7 @@ This PDF guide includes:
 1. Download the PDF:
    [Professional Git Command Guide](https://github.com/Borna-Etminan/Guides/blob/main/Git%20Guide/Git.pdf)
 2. Open it in any PDF reader.
+>> You can also Read Guide Online with [this tab](https://github.com/Borna-Etminan/Guides/blob/main/Git%20Guide/Git.md)
 3. Follow along with examples on your local machine.
 4. Practice each command in **Git Bash, Terminal, or VSCode** to reinforce learning.
 
