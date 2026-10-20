@@ -37,8 +37,9 @@ This PDF guide includes:
 
 ## 🚀 How to Use
 
+0. Install Git
 1. Download the PDF:
-   [Professional Git Command Guide](https://github.com/Borna-Etminan/Guides/blob/main/Linux%20Guide/Linux_Commands.pdf)
+   [Professional Git Command Guide](https://github.com/Borna-Etminan/Guides/blob/main/Git%20Guide/Git.pdf)
 2. Open it in any PDF reader.
 3. Follow along with examples on your local machine.
 4. Practice each command in **Git Bash, Terminal, or VSCode** to reinforce learning.
