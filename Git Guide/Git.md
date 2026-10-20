@@ -455,3 +455,18 @@ A Pull Request is not the same as `git merge`: a merge integrates branch changes
 - Practice recovery commands in a test repository before using them on important projects.
 
 **Remember:** Git is not just a collection of commands. Understanding your working directory, staging area, commits, branches, and remote repository is what allows you to use those commands safely and effectively.
+
+---
+
+## Author:
+[Borna Etminan](https://github.com/Borna-Etminan)
+
+---
+
+## 📫 Contact me
+* 📞 Phone: +989183820252
+* ✉️ Email: borna.etminan34@gmail.com
+* 📱 Telegram: https://t.me/BornaEtminan
+* ✉️ X acount: https://x.com/BornaEtminan
+* ✉️ Kaggle username: https://www.kaggle.com/bornaetminan
+* 📘 Blog on Substack: https://substack.com/@bornaetminan

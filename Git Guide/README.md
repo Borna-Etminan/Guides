@@ -77,6 +77,16 @@ Inspired by practical Git workflows used in real-world development teams.
 
 ---
 
+## 📫 Contact me
+* 📞 Phone: +989183820252
+* ✉️ Email: borna.etminan34@gmail.com
+* 📱 Telegram: https://t.me/BornaEtminan
+* ✉️ X acount: https://x.com/BornaEtminan
+* ✉️ Kaggle username: https://www.kaggle.com/bornaetminan
+* 📘 Blog on Substack: https://substack.com/@bornaetminan
+
+---
+
 ## 📄 License
 
 This repository is released under the **MIT License**.  
