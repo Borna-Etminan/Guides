@@ -1,354 +1,387 @@
-# GitHub Guide
+# راهنمای جامع GitHub
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![لوگوی GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 
-A beginner-friendly guide to GitHub, Markdown, collaboration, and building a professional developer profile.
+راهنمایی برای آشنایی با GitHub، زبان Markdown، همکاری در پروژه‌های نرم‌افزاری و ساخت یک پروفایل حرفه‌ای برای برنامه‌نویسان.
 
-## Table of Contents
+## فهرست مطالب
 
-- [History](#history)
-- [GitHub Accounts](#github-accounts)
-  - [Repositories](#repositories)
-  - [Licenses](#licenses)
-  - [The `.gitignore` File](#the-gitignore-file)
-  - [The `README.md` File](#the-readmemd-file)
-- [Markdown](#markdown)
-- [Writing Your Resume on GitHub](#writing-your-resume-on-github)
+- [تاریخچه](#تاریخچه)
+- [حساب کاربری GitHub](#حساب-کاربری-github)
+  - [مخازن (Repositories)](#مخازن-repositories)
+  - [مجوزهای نرم‌افزاری (Licenses)](#مجوزهای-نرم-افزاری-licenses)
+  - [فایل `.gitignore`](#فایل-gitignore)
+  - [فایل `README.md`](#فایل-readmemd)
+- [زبان Markdown](#زبان-markdown)
+- [نوشتن رزومه در GitHub](#نوشتن-رزومه-در-github)
 - [GitHub Desktop](#github-desktop)
-- [GitHub Organizations](#github-organizations)
+- [سازمان‌ها در GitHub](#سازمانها-در-github)
 - [GitHub Pages](#github-pages)
-- [GitHub Issues](#github-issues)
-- [Branches](#branches)
-- [Pull Requests](#pull-requests)
-- [Merge](#merge)
-- [Fork](#fork)
+- [Issues در GitHub](#issues-در-github)
+- [شاخه‌ها (Branches)](#شاخهها-branches)
+- [درخواست ادغام (Pull Requests)](#درخواست-ادغام-pull-requests)
+- [ادغام شاخه‌ها (Merge)](#ادغام-شاخهها-merge)
+- [فورک (Fork)](#فورک-fork)
+- [جمع‌بندی](#جمعبندی)
+- [منابع مفید](#منابع-مفید)
 
 ---
 
-# History
+# تاریخچه
 
-To understand how a technology works and why it exists, we should first understand the problem it was designed to solve.
+برای اینکه بفهمیم یک فناوری چگونه کار می‌کند و چرا به وجود آمده است، ابتدا باید بدانیم چه مشکلی را حل می‌کند.
 
-When Linus Torvalds was developing the Linux kernel, managing contributions and tracking changes across a large, distributed development team became increasingly challenging. In 2005, he created **Git**, a distributed version control system designed to make tracking changes, managing branches, and collaborating on software projects more efficient.
+زمانی که لینوس توروالدز (Linus Torvalds) در حال توسعه هستهٔ لینوکس بود، مدیریت مشارکت برنامه‌نویسان و پیگیری تغییرات در یک پروژهٔ بزرگ با مشکلات زیادی همراه بود. به همین دلیل، او در سال ۲۰۰۵ سیستم کنترل نسخه‌ای به نام **Git** را ایجاد کرد.
 
-For a more detailed introduction to Git, check out the [Git Guide](https://github.com/Borna-Etminan/Guides/tree/main/Git%20Guide).
+Git یک سیستم کنترل نسخهٔ توزیع‌شده (Distributed Version Control System) است که امکان ثبت تغییرات، مدیریت شاخه‌ها و همکاری هم‌زمان برنامه‌نویسان روی پروژه‌های نرم‌افزاری را فراهم می‌کند.
 
-GitHub was launched in 2008 as a platform built around Git. It made it easier for developers to host repositories online, contribute to open-source projects, review code, collaborate with teams, and showcase their work to potential employers.
+برای آشنایی بیشتر با Git، به [راهنمای آموزش Git](https://github.com/Borna-Etminan/Guides/tree/main/Git%20Guide) مراجعه کنید.
 
-In 2018, Microsoft acquired GitHub. This acquisition also strengthened the integration between GitHub and Microsoft's developer tools, including Visual Studio Code.
+در سال ۲۰۰۸، پلتفرمی به نام **GitHub** بر پایهٔ Git راه‌اندازی شد. این پلتفرم به برنامه‌نویسان اجازه می‌دهد پروژه‌های خود را به‌صورت آنلاین میزبانی کنند، در پروژه‌های متن‌باز مشارکت داشته باشند، کدهای یکدیگر را بررسی کنند و با سایر توسعه‌دهندگان همکاری کنند.
 
-Today, GitHub is much more than a place to store code. It is a platform for collaboration, open-source development, project management, and professional networking.
+در سال ۲۰۱۸، شرکت Microsoft، گیت‌هاب را خریداری کرد. این اتفاق به گسترش ارتباط میان ابزارهای مایکروسافت، از جمله Visual Studio Code، و سرویس‌های GitHub کمک کرد.
+
+امروزه GitHub تنها محلی برای ذخیره‌سازی کدها نیست؛ بلکه بستری برای همکاری تیمی، توسعهٔ متن‌باز، مدیریت پروژه و معرفی توانایی‌های حرفه‌ای برنامه‌نویسان محسوب می‌شود.
 
 ---
 
-# GitHub Accounts
+# حساب کاربری GitHub
 
-A GitHub account gives you access to repositories, collaboration tools, issue tracking, and other platform features.
+با داشتن یک حساب کاربری GitHub می‌توانید مخازن خود را مدیریت کنید، در پروژه‌های مختلف مشارکت داشته باشید، تغییرات را پیگیری کنید و از ابزارهای همکاری این پلتفرم استفاده کنید.
 
-## Creating an Account
+## ساخت حساب کاربری
 
-Follow these steps to create your account:
+برای ساخت حساب کاربری مراحل زیر را دنبال کنید:
 
-1. Visit [GitHub](https://github.com/) and click **Sign up**.
-2. Enter your email address and create a strong password.
-3. Choose your username carefully because it becomes part of your public profile URL:
+1. وارد [وب‌سایت GitHub](https://github.com/) شوید و روی گزینهٔ **Sign up** کلیک کنید.
+2. آدرس ایمیل خود را وارد کنید و یک رمز عبور قوی انتخاب کنید.
+3. نام کاربری خود را با دقت انتخاب کنید؛ زیرا بخشی از آدرس عمومی پروفایل شما خواهد بود:
 
    `https://github.com/your-username`
 
-4. Complete the verification process.
-5. Open your profile at `https://github.com/your-username` and click **Edit profile**.
-6. Add a profile picture, display name, bio, location, and other relevant information.
-7. If applicable, include your university, organization, or personal website.
+4. مراحل تأیید حساب کاربری را تکمیل کنید.
+5. وارد پروفایل خود شوید و روی گزینهٔ **Edit profile** کلیک کنید.
+6. تصویر پروفایل، نام نمایشی، توضیحات کوتاه (Bio)، موقعیت مکانی و سایر اطلاعات مرتبط را وارد کنید.
+7. در صورت نیاز، نام دانشگاه، شرکت یا وب‌سایت شخصی خود را نیز اضافه کنید.
 
-> **Tip:** Choose a professional username that is easy to remember and suitable for your future career.
+> **نکته:** نام کاربری خود را به‌گونه‌ای انتخاب کنید که حرفه‌ای، ساده و به‌یادماندنی باشد.
 
-A single email address can generally be associated with one GitHub account at a time. GitHub also supports changing the email address associated with an account.
+به‌طور معمول، هر آدرس ایمیل در یک زمان به یک حساب GitHub اختصاص داده می‌شود. البته می‌توانید ایمیل متصل به حساب خود را تغییر دهید.
 
-## Repositories
+## مخازن (Repositories)
 
-A **repository (Repo)** is a place where a project and its associated files are stored and tracked.
+**Repository** یا به‌اختصار **Repo**، محلی برای نگهداری فایل‌های یک پروژه و پیگیری تغییرات آن‌هاست.
 
-A repository can contain source code, documentation, images, configuration files, and other project resources. Git tracks changes to files, while GitHub hosts the repository online and provides collaboration tools.
+یک مخزن می‌تواند شامل کدهای برنامه‌نویسی، مستندات، تصاویر، فایل‌های پیکربندی و سایر منابع مرتبط با پروژه باشد.
 
-Repositories can be public or private:
+Git تغییرات فایل‌ها را ثبت و مدیریت می‌کند و GitHub مخزن را به‌صورت آنلاین میزبانی می‌کند و ابزارهای لازم برای همکاری را در اختیار توسعه‌دهندگان قرار می‌دهد.
 
-- **Public:** Anyone can view the repository.
-- **Private:** Access is restricted to authorized users.
+مخازن GitHub دو نوع اصلی دارند:
 
-You can create a repository for a personal project, a university assignment, an open-source contribution, or your professional portfolio.
+- **Public:** مخزن عمومی است و همه می‌توانند محتوای آن را مشاهده کنند.
+- **Private:** مخزن خصوصی است و فقط افراد دارای مجوز به آن دسترسی دارند.
 
-### Creating a Repository
+می‌توانید برای پروژه‌های شخصی، تکالیف دانشگاهی، مشارکت‌های متن‌باز یا ساخت رزومهٔ حرفه‌ای خود مخزن ایجاد کنید.
 
-1. Sign in to GitHub.
-2. Click the `+` icon and select **New repository**.
-3. Enter a repository name and an optional description.
-4. Choose whether the repository should be public or private.
-5. Optionally, initialize it with a `README.md`, a `.gitignore` template, or a license.
-6. Click **Create repository**.
+### ساخت یک Repository
 
-### Licenses
+۱. وارد حساب GitHub خود شوید.
 
-A license explains how other people are allowed to use, modify, distribute, and share your project's code.
+۲. روی علامت `+` کلیک کنید و گزینهٔ **New repository** را انتخاب کنید.
 
-Choosing a license is important, especially for open-source projects, because making a repository public does not automatically grant permission to reuse its contents.
+۳. نام مخزن و در صورت تمایل توضیحات آن را وارد کنید.
 
-Here are three common options:
+۴. مشخص کنید مخزن عمومی باشد یا خصوصی.
 
-#### MIT License
+۵. در صورت نیاز، هنگام ساخت مخزن یک فایل `README.md`، قالب `.gitignore` یا مجوز نرم‌افزاری اضافه کنید.
 
-The MIT License is a permissive open-source license. It allows people to use, modify, distribute, and include your code in other projects, including commercial projects, provided they preserve the required copyright and license notices.
+۶. روی **Create repository** کلیک کنید.
 
-It is a popular choice for personal projects and open-source libraries.
+### مجوزهای نرم‌افزاری (Licenses)
 
-#### Apache License 2.0
+مجوز نرم‌افزاری مشخص می‌کند دیگران تحت چه شرایطی اجازه دارند از کدهای پروژهٔ شما استفاده کنند، آن‌ها را تغییر دهند، بازتوزیع کنند یا در پروژه‌های دیگر به کار ببرند.
 
-The Apache License 2.0 is another permissive open-source license. Like the MIT License, it allows broad reuse and redistribution.
+انتخاب مجوز، به‌خصوص در پروژه‌های متن‌باز، اهمیت زیادی دارد؛ زیرا **عمومی بودن یک مخزن به‌معنای اجازهٔ استفادهٔ آزاد از تمام کدهای آن نیست.**
 
-It also includes explicit provisions related to patent rights and requires preservation of certain notices.
+در ادامه با سه حالت رایج آشنا می‌شویم.
 
-This can be a good choice for projects where clear patent terms are important.
+#### مجوز MIT
 
-#### No License
+مجوز MIT یک مجوز متن‌باز با محدودیت‌های نسبتاً کم است.
 
-If you do not provide a license, your code is generally subject to the default copyright protections that apply to it.
+این مجوز به دیگران اجازه می‌دهد از کد شما استفاده کنند، آن را تغییر دهند، بازتوزیع کنند و حتی در پروژه‌های تجاری به کار ببرند؛ به شرط آنکه اطلاعیه‌های مربوط به حق نشر و متن مجوز را حفظ کنند.
 
-Other people can view a public repository, but they do not automatically receive permission to copy, modify, distribute, or use its code.
+این مجوز برای پروژه‌های شخصی، کتابخانه‌های نرم‌افزاری و بسیاری از پروژه‌های متن‌باز انتخاب محبوبی است.
 
-> **Recommendation:** If you want others to use and contribute to your open-source project, choose an appropriate license. Read its terms before publishing.
+#### مجوز Apache 2.0
 
-For more information, visit [Choose a License](https://choosealicense.com/).
+مجوز Apache 2.0 نیز یک مجوز متن‌باز با محدودیت‌های کم است و امکان استفاده، تغییر و بازتوزیع کد را فراهم می‌کند.
 
-### The `.gitignore` File
+یکی از تفاوت‌های مهم آن با MIT، داشتن شرایط صریح‌تر دربارهٔ حقوق اختراع (Patent Rights) است. همچنین رعایت برخی الزامات مربوط به اطلاعیه‌ها و تغییرات ضروری است.
 
-The `.gitignore` file tells Git which untracked files and directories it should ignore.
+این مجوز برای پروژه‌هایی مناسب است که شفافیت دربارهٔ حقوق اختراع در آن‌ها اهمیت دارد.
 
-During development, many files are generated automatically or contain information that should not be included in the repository. Examples include temporary files, build outputs, local configuration files, and dependency directories.
+#### بدون مجوز (No License)
 
-A `.gitignore` file helps prevent these files from being accidentally added to version control.
+اگر برای پروژهٔ خود مجوزی تعیین نکنید، کد شما عموماً تحت حمایت قوانین پیش‌فرض حق نشر قرار می‌گیرد.
 
-#### Example
+دیگران ممکن است بتوانند مخزن عمومی شما را مشاهده کنند، اما صرفاً به دلیل عمومی بودن مخزن، اجازهٔ قانونی استفاده، کپی‌برداری، تغییر یا توزیع کد را به دست نمی‌آورند.
+
+> **پیشنهاد:** اگر می‌خواهید دیگران بتوانند از پروژهٔ متن‌باز شما استفاده کنند یا در توسعهٔ آن مشارکت داشته باشند، مجوز مناسبی انتخاب کنید و پیش از انتشار، شرایط آن را بخوانید.
+
+برای اطلاعات بیشتر به [وب‌سایت Choose a License](https://choosealicense.com/) مراجعه کنید.
+
+### فایل `.gitignore`
+
+فایل `.gitignore` به Git می‌گوید کدام فایل‌ها و پوشه‌های هنوز ثبت‌نشده را نادیده بگیرد.
+
+هنگام توسعهٔ نرم‌افزار، فایل‌های زیادی ایجاد می‌شوند که لزوماً نباید وارد مخزن شوند. برای مثال:
+
+- فایل‌های موقت
+- خروجی‌های حاصل از Build
+- پوشه‌های مربوط به کتابخانه‌ها و وابستگی‌ها
+- فایل‌های تنظیمات شخصی
+- فایل‌های محیطی و اطلاعات حساس
+
+فایل `.gitignore` کمک می‌کند این موارد به‌صورت ناخواسته به مخزن اضافه نشوند.
+
+#### یک مثال کاربردی
 
 ```gitignore
-# Dependencies
+# وابستگی‌ها
 node_modules/
 
-# Build outputs
+# خروجی‌های Build
 dist/
 build/
 
-# Environment variables and local secrets
+# متغیرهای محیطی و تنظیمات محرمانه
 .env
 .env.local
 
-# Python cache
+# فایل‌های موقت پایتون
 __pycache__/
 *.py[cod]
 
-# Virtual environments
+# محیط‌های مجازی پایتون
 .venv/
 venv/
 
-# Operating system files
+# فایل‌های سیستم‌عامل
 .DS_Store
 Thumbs.db
 
-# Editor settings
+# تنظیمات و فایل‌های ویرایشگر
 .vscode/
 ```
 
-#### Common `.gitignore` Patterns
+#### الگوهای رایج در `.gitignore`
 
-| Pattern | Meaning |
+| الگو | کاربرد |
 |---|---|
-| `file.txt` | Ignore a file matching this path or name |
-| `*.log` | Ignore files ending in `.log` |
-| `temp/` | Ignore a directory named `temp` |
-| `!important.log` | Exclude a matching file from the ignore rules |
-| `/config.json` | Ignore `config.json` at the repository root |
-| `**/cache/` | Ignore directories named `cache` at any depth |
+| `file.txt` | نادیده گرفتن فایل مطابق با این مسیر یا نام |
+| `*.log` | نادیده گرفتن فایل‌هایی که پسوند `.log` دارند |
+| `temp/` | نادیده گرفتن پوشه‌ای به نام `temp` |
+| `!important.log` | خارج کردن فایل مطابق با این الگو از قوانین نادیده‌گیری |
+| `/config.json` | نادیده گرفتن `config.json` در ریشهٔ مخزن |
+| `**/cache/` | نادیده گرفتن پوشه‌هایی با نام `cache` در مسیرهای مختلف |
 
-#### Important Notes
+#### نکات مهم دربارهٔ `.gitignore`
 
-- Git ignores matching files that are not already tracked.
-- Adding a file to `.gitignore` does not automatically remove it from Git if it has already been committed.
-- Never commit passwords, API keys, access tokens, or other secrets.
-- If a sensitive file has already been pushed, simply ignoring it is not enough. Remove the exposed secret from the relevant service and rotate or revoke it immediately.
+- Git فایل‌هایی را که قبلاً تحت پیگیری (Tracked) قرار نگرفته‌اند و با الگوهای این فایل مطابقت دارند، نادیده می‌گیرد.
+- اگر فایلی قبلاً به Git اضافه و Commit شده باشد، افزودن نام آن به `.gitignore` باعث حذف خودکار آن از مخزن نمی‌شود.
+- هرگز رمز عبور، کلید API، Access Token یا اطلاعات محرمانه را در مخزن ثبت نکنید.
+- اگر اطلاعات حساسی را قبلاً به مخزن آنلاین ارسال کرده‌اید، صرفاً حذف فایل یا افزودن آن به `.gitignore` کافی نیست. باید کلید یا رمز افشاشده را از سرویس مربوطه باطل یا تعویض کنید.
 
-You can find useful templates in [GitHub's gitignore repository](https://github.com/github/gitignore).
+برای استفاده از قالب‌های آمادهٔ `.gitignore` می‌توانید به [مخزن رسمی قالب‌های GitHub](https://github.com/github/gitignore) مراجعه کنید.
 
-### The `README.md` File
+### فایل `README.md`
 
-A `README.md` file introduces your repository and explains what the project does.
+فایل `README.md` معمولاً اولین بخشی است که بازدیدکنندگان هنگام ورود به یک مخزن مشاهده می‌کنند.
 
-It is usually displayed automatically on the repository's main page, making it one of the first things visitors see.
+این فایل برای معرفی پروژه، توضیح کاربرد آن و راهنمایی کاربران و توسعه‌دهندگان نوشته می‌شود.
 
-A good README may include:
+یک README مناسب می‌تواند شامل بخش‌های زیر باشد:
 
-- Project title and description
-- Features
-- Screenshots or demonstrations
-- Installation instructions
-- Usage examples
-- Technologies used
-- Project structure
-- Contribution guidelines
-- License information
-- Contact details
+- نام و توضیحات پروژه
+- قابلیت‌ها و ویژگی‌ها
+- تصاویر و ویدئوهای نمایشی
+- راهنمای نصب
+- مثال‌های استفاده
+- فناوری‌های استفاده‌شده
+- ساختار پوشه‌ها و فایل‌ها
+- راهنمای مشارکت در پروژه
+- اطلاعات مجوز نرم‌افزاری
+- اطلاعات تماس
 
-The `.md` extension stands for Markdown, a lightweight markup language used to format text.
+پسوند `.md` مخفف Markdown است؛ زبانی ساده برای قالب‌بندی متن که در ادامه با آن آشنا می‌شویم.
 
-A clear README helps other developers understand your project quickly and makes your repository more professional.
+یک README واضح و کامل کمک می‌کند دیگران در مدت کوتاهی متوجه شوند پروژهٔ شما چه کاری انجام می‌دهد و چگونه می‌توانند از آن استفاده کنند.
 
 ---
 
-# Markdown
+# زبان Markdown
 
-Markdown is a lightweight markup language created by John Gruber, with contributions from Aaron Swartz, and first released in 2004.
+Markdown یک زبان نشانه‌گذاری سبک است که جان گروبر (John Gruber) با مشارکت آرون شوارتز (Aaron Swartz) توسعه داد و در سال ۲۰۰۴ منتشر کرد.
 
-Its goal is to make writing formatted text simple and readable without requiring lengthy HTML tags. Markdown can be converted into HTML and is widely used for documentation, README files, issues, pull requests, and technical writing.
+هدف Markdown این بود که نوشتن متن‌های قالب‌بندی‌شده ساده‌تر و خواناتر شود، بدون اینکه نویسنده مجبور باشد برای هر تغییر ظاهری از تگ‌های طولانی HTML استفاده کند.
 
-GitHub supports its own extended version of Markdown, commonly known as **GitHub Flavored Markdown (GFM)**.
+Markdown را می‌توان به HTML تبدیل کرد و از آن در مستندات، فایل‌های README، بخش Issues، درخواست‌های Pull Request و سایر نوشته‌های فنی استفاده کرد.
 
-## Basic Markdown Syntax
+GitHub نسخهٔ گسترش‌یافته‌ای از Markdown را پشتیبانی می‌کند که با نام **GitHub Flavored Markdown (GFM)** شناخته می‌شود.
 
-### 1. Headings
+## دستورات پایهٔ Markdown
 
-Use `#` to create headings. The number of `#` symbols determines the heading level.
+### ۱. عنوان‌ها (Headings)
+
+برای ایجاد عنوان از علامت `#` استفاده می‌کنیم. تعداد علامت‌های `#` سطح عنوان را مشخص می‌کند.
 
 ```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+# عنوان سطح اول
+## عنوان سطح دوم
+### عنوان سطح سوم
+#### عنوان سطح چهارم
+##### عنوان سطح پنجم
+###### عنوان سطح ششم
 ```
 
-Use headings in a logical order to organize your documentation.
+هرچه تعداد `#` بیشتر باشد، سطح عنوان پایین‌تر است.
 
-### 2. Text Formatting
+بهتر است عنوان‌ها را به‌ترتیب منطقی استفاده کنید تا ساختار مستندات شما منظم و قابل‌فهم باشد.
 
-**Bold text:**
+### ۲. قالب‌بندی متن
+
+**متن ضخیم (Bold):**
 
 ```markdown
-**This text is bold**
-__This text is also bold__
+**این متن ضخیم است**
+__این متن نیز ضخیم است__
 ```
 
-*Italic text:*
+*متن مورب (Italic):*
 
 ```markdown
-*This text is italic*
-_This text is also italic_
+*این متن مورب است*
+_این متن نیز مورب است_
 ```
 
-***Bold and italic text:***
+***متن ضخیم و مورب:***
 
 ```markdown
-***This text is bold and italic***
+***این متن هم ضخیم است و هم مورب***
 ```
 
-~~Strikethrough text:~~
+~~متن خط‌خورده (Strikethrough):~~
 
 ```markdown
-~~This text is crossed out~~
+~~این متن خط خورده است~~
 ```
 
-### 3. Links
+### ۳. لینک‌ها (Links)
 
-Use the following syntax to create a hyperlink:
+برای ایجاد لینک از ساختار زیر استفاده می‌کنیم:
 
 ```markdown
-[GitHub](https://github.com/)
+[گیت‌هاب](https://github.com/)
 ```
 
-You can also link to a specific section of the same document:
+با کلیک روی عبارت «گیت‌هاب»، کاربر به آدرس مشخص‌شده منتقل می‌شود.
+
+همچنین می‌توانید به بخش خاصی از همان فایل Markdown لینک بدهید:
 
 ```markdown
-[Go to History](#history)
+[رفتن به بخش تاریخچه](#تاریخچه)
 ```
 
-### 4. Images
+در GitHub، شناسهٔ لینک داخلی بر اساس عنوان بخش ساخته می‌شود؛ در عنوان‌های فارسی بهتر است پس از رندر شدن، عملکرد لینک را بررسی کنید.
 
-Use an exclamation mark followed by the alternative text and the image URL:
+### ۴. تصاویر (Images)
+
+برای نمایش تصویر از علامت `!`، متن جایگزین و آدرس تصویر استفاده می‌کنیم:
 
 ```markdown
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![لوگوی GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 ```
 
-The alternative text describes the image if it cannot be displayed and improves accessibility.
+متن جایگزین (Alt Text) توضیحی کوتاه دربارهٔ تصویر است که در صورت بارگذاری نشدن تصویر نمایش داده می‌شود و به دسترس‌پذیری محتوا کمک می‌کند.
 
-You can also link an image to another page:
+همچنین می‌توانید تصویر را به یک لینک تبدیل کنید:
 
 ```markdown
-[![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/)
+[![لوگوی GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/)
 ```
 
-### 5. Lists
+در این حالت با کلیک روی تصویر، کاربر به وب‌سایت GitHub منتقل می‌شود.
 
-#### Unordered Lists
+### ۵. فهرست‌ها (Lists)
 
-Use `-`, `*`, or `+` to create unordered lists.
+#### فهرست نامرتب (Unordered List)
+
+برای ساخت فهرست نامرتب می‌توانید از `-`، `*` یا `+` استفاده کنید.
 
 ```markdown
-- First item
-- Second item
-- Third item
+- مورد اول
+- مورد دوم
+- مورد سوم
 ```
 
-#### Ordered Lists
+#### فهرست مرتب (Ordered List)
 
-Use numbers followed by periods:
+برای ساخت فهرست شماره‌گذاری‌شده از عدد و نقطه استفاده می‌کنیم:
 
 ```markdown
-1. First item
-2. Second item
-3. Third item
+1. مورد اول
+2. مورد دوم
+3. مورد سوم
 ```
 
-#### Nested Lists
+#### فهرست تو در تو (Nested List)
 
-Indent nested items beneath their parent items:
+برای قرار دادن یک فهرست داخل فهرست دیگر، زیرمجموعه‌ها را با فاصله تورفتگی می‌دهیم:
 
 ```markdown
-- Programming Languages
+- زبان‌های برنامه‌نویسی
   - Python
   - JavaScript
   - C++
-- Tools
+- ابزارها
   - Git
   - GitHub
 ```
 
-### 6. Horizontal Rules
+این ساختار برای دسته‌بندی مهارت‌ها، مراحل نصب و موضوعات آموزشی بسیار کاربردی است.
 
-Use three or more hyphens, asterisks, or underscores to create a horizontal line.
+### ۶. خط جداکننده (Horizontal Rule)
+
+برای ایجاد یک خط افقی بین بخش‌های متن، از سه یا چند خط تیره استفاده کنید:
 
 ```markdown
 ---
 ```
 
-This is useful for separating major sections of a document.
+این دستور برای جدا کردن بخش‌های اصلی یک مستند کاربرد دارد.
 
-### 7. Blockquotes
+### ۷. نقل‌قول (Blockquote)
 
-Use `>` to highlight quotations, notes, or important information.
+برای مشخص کردن نقل‌قول، یادداشت یا توضیحات ویژه از علامت `>` استفاده می‌کنیم:
 
 ```markdown
-> This is a blockquote.
+> این یک نقل‌قول است.
 >
-> It can contain multiple paragraphs.
+> این قسمت پاراگراف دوم نقل‌قول است.
 ```
 
-### 8. Inline Code and Code Blocks
+می‌توانید از این قابلیت برای برجسته کردن نکات مهم در راهنماها استفاده کنید.
 
-Use single backticks for inline code:
+### ۸. کد درون‌خطی و بلوک کد (Code)
+
+برای نمایش یک دستور یا قطعه کد کوتاه درون متن، از یک جفت بک‌تیک استفاده می‌کنیم:
 
 ```markdown
-Use `git status` to check your working tree.
+برای بررسی وضعیت مخزن از دستور `git status` استفاده کنید.
 ```
 
-Use three backticks to create a code block:
+برای نمایش یک بلوک کد، سه بک‌تیک در ابتدا و انتهای کد قرار می‌دهیم:
 
 ````markdown
 ```python
@@ -356,9 +389,9 @@ print("Hello, World!")
 ```
 ````
 
-You can specify a language after the opening backticks to enable syntax highlighting.
+با نوشتن نام زبان بعد از بک‌تیک‌های ابتدایی، می‌توانید از قابلیت Syntax Highlighting استفاده کنید.
 
-For example:
+برای مثال:
 
 ````markdown
 ```javascript
@@ -366,253 +399,294 @@ console.log("Hello, World!");
 ```
 ````
 
-### 9. Tables
+این قابلیت باعث می‌شود دستورات و اجزای مختلف کد با رنگ‌های متفاوت نمایش داده شوند.
 
-Use pipes (`|`) to separate columns and hyphens (`-`) to define the header row.
+### ۹. جدول‌ها (Tables)
+
+برای ساخت جدول از علامت `|` برای جدا کردن ستون‌ها و از `-` برای تعریف ردیف عنوان استفاده می‌کنیم:
 
 ```markdown
-| Name | Language | Level |
+| نام | نوع | سطح |
 |---|---|---|
-| Python | Programming | Intermediate |
-| HTML | Markup | Beginner |
-| CSS | Styling | Beginner |
+| Python | زبان برنامه‌نویسی | متوسط |
+| HTML | زبان نشانه‌گذاری | مقدماتی |
+| CSS | زبان استایل‌دهی | مقدماتی |
 ```
 
-You can also align columns:
+همچنین می‌توانید نحوهٔ تراز شدن محتوای ستون‌ها را مشخص کنید:
 
 ```markdown
-| Left | Center | Right |
+| چپ‌چین | وسط‌چین | راست‌چین |
 |:---|:---:|---:|
 | A | B | C |
 | D | E | F |
 ```
 
-### 10. Task Lists
+### ۱۰. فهرست کارها (Task Lists)
 
-GitHub supports interactive-looking checklists in issues, pull requests, and Markdown documents.
-
-```markdown
-- [x] Learn Git basics
-- [x] Create a GitHub account
-- [ ] Publish a project
-- [ ] Contribute to an open-source repository
-```
-
-`[x]` represents a completed task, while `[ ]` represents an incomplete task.
-
-### 11. Escaping Special Characters
-
-If you want to display a Markdown character instead of using it as formatting syntax, place a backslash before it.
+GitHub از فهرست‌های وظایف پشتیبانی می‌کند. این فهرست‌ها به‌خصوص در Issues، Pull Requests و مستندات پروژه کاربرد دارند.
 
 ```markdown
-\*This text will not be italicized\*
+- [x] یادگیری مبانی Git
+- [x] ساخت حساب GitHub
+- [ ] انتشار یک پروژه
+- [ ] مشارکت در یک پروژهٔ متن‌باز
 ```
 
-This is useful when documenting Markdown syntax itself.
+- `[x]` نشان‌دهندهٔ وظیفهٔ انجام‌شده است.
+- `[ ]` نشان‌دهندهٔ وظیفهٔ انجام‌نشده است.
 
-### 12. HTML in Markdown
+### ۱۱. نمایش کاراکترهای ویژه
 
-GitHub allows certain HTML elements inside Markdown documents.
+اگر بخواهید یک کاراکتر Markdown را به‌صورت عادی نمایش دهید و نگذارید به‌عنوان دستور قالب‌بندی تفسیر شود، می‌توانید قبل از آن از بک‌اسلش `\` استفاده کنید.
 
-For example:
+برای مثال:
+
+```markdown
+\*این متن به‌صورت مورب نمایش داده نمی‌شود\*
+```
+
+این قابلیت هنگام آموزش یا مستندسازی دستورات Markdown بسیار کاربردی است.
+
+### ۱۲. استفاده از HTML در Markdown
+
+GitHub اجازه می‌دهد از برخی تگ‌های HTML در فایل‌های Markdown استفاده کنید.
+
+برای مثال:
 
 ```html
 <p align="center">
-  <strong>Welcome to my GitHub profile!</strong>
+  <strong>به پروفایل GitHub من خوش آمدید!</strong>
 </p>
 ```
 
-However, not every HTML element or attribute is supported. GitHub sanitizes rendered HTML for security, so some elements, attributes, and styling options may be removed or restricted.
+با این روش می‌توانید در برخی قسمت‌ها ظاهر محتوا را تنظیم کنید.
 
-**Tip:** Prefer standard Markdown whenever possible because it is easier to read and maintain.
+بااین‌حال، همهٔ تگ‌ها و ویژگی‌های HTML پشتیبانی نمی‌شوند. GitHub برای حفظ امنیت، HTML رندرشده را پاک‌سازی می‌کند و ممکن است بعضی از تگ‌ها، ویژگی‌ها یا تنظیمات ظاهری را حذف یا محدود کند.
 
-For more information, visit the [GitHub Flavored Markdown documentation](https://github.github.com/gfm/).
+**نکته:** تا جای ممکن از Markdown استاندارد استفاده کنید؛ زیرا خواناتر است و نگهداری آن آسان‌تر خواهد بود.
 
-![P1](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/1.png)
+برای یادگیری بیشتر به [مستندات GitHub Flavored Markdown](https://github.github.com/gfm/) مراجعه کنید.
+
+![تصویر آموزش Markdown](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/1.png)
 
 ---
 
-# Writing Your Resume on GitHub
+# نوشتن رزومه در GitHub
 
-GitHub allows you to create a personal profile README that appears directly on your profile page.
+یکی از قابلیت‌های GitHub، ساخت یک فایل README اختصاصی برای پروفایل شخصی است. این فایل در صفحهٔ پروفایل شما نمایش داده می‌شود و می‌تواند مانند یک رزومهٔ کوتاه و حرفه‌ای عمل کند.
 
-This is a useful way to introduce yourself, highlight your technical skills, showcase projects, and provide professional contact information.
+با استفاده از این قابلیت می‌توانید خودتان را معرفی کنید، مهارت‌هایتان را نشان دهید، پروژه‌های خود را به نمایش بگذارید و راه‌های ارتباطی حرفه‌ای خود را در اختیار دیگران قرار دهید.
 
-## Creating a Profile README
+## ساخت Profile README
 
-1. Create a new repository.
-2. Name the repository exactly the same as your GitHub username.
-3. Make sure the repository is public.
-4. Add a `README.md` file.
-5. Write your introduction, skills, projects, achievements, and contact information.
-6. Commit your changes and visit your GitHub profile.
+۱. یک مخزن جدید ایجاد کنید.
 
-When the repository name matches your username, GitHub displays its README on your profile page.
+۲. نام مخزن را دقیقاً برابر با نام کاربری GitHub خود قرار دهید.
 
-For example, if your username is `example-user`, your repository should be named `example-user`.
+۳. مخزن را عمومی (Public) کنید.
 
-## Recommended Resume Structure
+۴. یک فایل با نام `README.md` در مخزن ایجاد کنید.
 
-### 1. Introduction
+۵. اطلاعات مربوط به معرفی، مهارت‌ها، پروژه‌ها، دستاوردها و راه‌های ارتباطی خود را بنویسید.
 
-Introduce yourself briefly.
+۶. تغییرات را Commit کنید و سپس وارد صفحهٔ پروفایل خود شوید.
 
-Include your professional interests, current role or education, and the kind of work you enjoy.
+اگر نام مخزن دقیقاً با نام کاربری شما یکسان باشد، GitHub محتوای README آن را در پروفایل شما نمایش می‌دهد.
 
-### 2. Skills
+برای مثال، اگر نام کاربری شما `example-user` باشد، نام مخزن باید `example-user` باشد.
 
-Organize your skills into meaningful categories.
+## ساختار پیشنهادی رزومه
 
-- **Programming Languages:** Python, JavaScript, C++, Java
-- **Frameworks and Libraries:** React, Django, Express
-- **Tools and Platforms:** Git, GitHub, Docker, Linux
-- **Databases:** PostgreSQL, MySQL, MongoDB
-- **Professional Skills:** Communication, teamwork, problem-solving
+### ۱. معرفی (Introduction)
 
-Only include technologies and skills you can reasonably demonstrate.
+در ابتدای رزومه، خودتان را به‌صورت کوتاه معرفی کنید.
 
-### 3. Certificates and Achievements
+می‌توانید به علایق حرفه‌ای، موقعیت شغلی یا تحصیلی فعلی و حوزه‌هایی که دوست دارید در آن‌ها فعالیت کنید اشاره کنید.
 
-List relevant certificates, awards, courses, and other achievements.
+### ۲. مهارت‌ها (Skills)
 
-Whenever possible, link directly to the certificate or its official verification page.
+مهارت‌های خود را در دسته‌بندی‌های مشخص قرار دهید.
 
-### 4. Portfolio and Projects
+- **زبان‌های برنامه‌نویسی:** Python، JavaScript، C++، Java
+- **فریم‌ورک‌ها و کتابخانه‌ها:** React، Django، Express
+- **ابزارها و پلتفرم‌ها:** Git، GitHub، Docker، Linux
+- **پایگاه‌های داده:** PostgreSQL، MySQL، MongoDB
+- **مهارت‌های حرفه‌ای:** ارتباط مؤثر، کار تیمی، حل مسئله
 
-Showcase projects that demonstrate your abilities.
+فقط مهارت‌هایی را ذکر کنید که واقعاً با آن‌ها آشنا هستید و در صورت نیاز می‌توانید توانایی خود را نشان دهید.
 
-For each project, include:
+### ۳. مدارک و دستاوردها (Certificates & Achievements)
 
-- Project name and a short description
-- Technologies used
-- Main features
-- Link to the source code
-- Live demo, if available
+مدارک معتبر، گواهی‌نامه‌ها، دوره‌های آموزشی، جوایز و سایر دستاوردهای مرتبط خود را فهرست کنید.
 
-Prioritize complete, useful projects over a long list of unfinished repositories.
+در صورت امکان، لینک مستقیم به مدرک یا صفحهٔ رسمی تأیید اعتبار آن اضافه کنید.
 
-### 5. Contact Information
+### ۴. نمونه‌کارها و پروژه‌ها (Portfolio & Projects)
 
-Add professional ways for people to contact you, such as:
+پروژه‌هایی را معرفی کنید که توانایی‌های شما را به‌خوبی نشان می‌دهند.
 
-- Email
-- LinkedIn
-- Personal website
-- Portfolio
-- Other relevant professional profiles
+برای هر پروژه، موارد زیر را بنویسید:
 
-Avoid publishing sensitive personal information.
+- نام پروژه و توضیح کوتاه
+- فناوری‌های استفاده‌شده
+- قابلیت‌های اصلی
+- لینک مخزن کد
+- لینک نسخهٔ آنلاین یا Demo، در صورت وجود
 
-> **Tip:** Keep your profile README concise, organized, and up to date. Your strongest projects and most relevant skills should be easy to find.
-![P2](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/2.png)
+بهتر است به‌جای فهرست طولانی از مخازن ناقص، چند پروژهٔ کامل و کاربردی را معرفی کنید.
+
+### ۵. اطلاعات تماس (Contact Information)
+
+راه‌های ارتباطی حرفه‌ای خود را اضافه کنید؛ برای مثال:
+
+- ایمیل
+- لینک LinkedIn
+- وب‌سایت شخصی
+- پورتفولیو
+- سایر پروفایل‌های حرفه‌ای مرتبط
+
+از انتشار اطلاعات شخصی و حساس خودداری کنید.
+
+> **نکته:** فایل Profile README را مختصر، منظم و به‌روز نگه دارید. مهم‌ترین مهارت‌ها و بهترین پروژه‌های شما باید به‌راحتی قابل مشاهده باشند.
+
+![نمونه رزومه در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/2.png)
 
 ---
 
 # GitHub Desktop
 
-[GitHub Desktop](https://desktop.github.com/) is a graphical application that makes it easier to work with Git repositories without relying entirely on command-line commands.
+[GitHub Desktop](https://desktop.github.com/) یک نرم‌افزار گرافیکی برای کار با مخازن Git است که به شما اجازه می‌دهد بسیاری از عملیات رایج Git را بدون نیاز به نوشتن دستورات خط فرمان انجام دهید.
 
-It provides a visual interface for reviewing changes, creating commits, managing branches, and synchronizing your local work with GitHub.
+این برنامه رابطی تصویری برای مشاهدهٔ تغییرات، ایجاد Commit، مدیریت Branch و همگام‌سازی پروژهٔ محلی با GitHub فراهم می‌کند.
 
-## Installing GitHub Desktop
+## نصب GitHub Desktop
 
-1. Download the application from the [official website](https://desktop.github.com/).
-2. Install and open it.
-3. Sign in with your GitHub account.
-4. Clone an existing repository or create a new one.
+۱. برنامه را از [وب‌سایت رسمی GitHub Desktop](https://desktop.github.com/) دانلود کنید.
 
-## Cloning a Repository
+۲. آن را نصب و اجرا کنید.
 
-To download an existing GitHub repository to your computer:
+۳. با حساب GitHub خود وارد شوید.
 
-1. Open GitHub Desktop.
-2. Select **File → Clone Repository**.
-3. Choose a repository from your GitHub account or enter its URL.
-4. Select the local directory where you want to save it.
-5. Click **Clone**.
+۴. یک مخزن موجود را Clone کنید یا یک مخزن جدید بسازید.
 
-Cloning downloads the repository and its Git history to your computer, allowing you to work on it locally.
+## Clone کردن یک Repository
 
-## Making and Publishing Changes
+برای دانلود یک مخزن از GitHub روی کامپیوتر خود، مراحل زیر را انجام دهید:
 
-After cloning a repository:
+۱. برنامهٔ GitHub Desktop را باز کنید.
 
-1. Open the repository's local folder in your preferred editor, such as Visual Studio Code.
-2. Create, edit, or delete files as needed.
-3. Return to GitHub Desktop to review the changes.
-4. Enter a short, descriptive commit message.
-5. Click **Commit to main** or commit to your current branch.
-6. Click **Push origin** to upload your local commits to GitHub.
+۲. از منوی برنامه گزینهٔ **File → Clone Repository** را انتخاب کنید.
 
-If you have not pushed your changes before, the application may show **Publish repository** or another publishing-related option instead.
+۳. مخزن موردنظر را از حساب خود انتخاب کنید یا آدرس آن را وارد کنید.
 
-![P3](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/3.png)
+۴. پوشه‌ای را برای ذخیره‌سازی مخزن روی کامپیوتر انتخاب کنید.
 
-## Understanding the Main Terms
+۵. روی **Clone** کلیک کنید.
+
+با این کار، مخزن به همراه تاریخچهٔ Git آن روی کامپیوتر شما دانلود می‌شود و می‌توانید به‌صورت محلی روی پروژه کار کنید.
+
+## اعمال و انتشار تغییرات
+
+بعد از Clone کردن مخزن:
+
+۱. پوشهٔ محلی پروژه را با ویرایشگری مانند Visual Studio Code باز کنید.
+
+۲. فایل‌های موردنظر را ایجاد، ویرایش یا حذف کنید.
+
+۳. به GitHub Desktop برگردید و تغییرات را بررسی کنید.
+
+۴. یک پیام کوتاه و واضح برای Commit بنویسید.
+
+۵. روی **Commit to main** یا گزینهٔ Commit مربوط به شاخهٔ فعلی کلیک کنید.
+
+۶. روی **Push origin** کلیک کنید تا Commitهای محلی شما به GitHub ارسال شوند.
+
+اگر مخزن هنوز روی GitHub منتشر نشده باشد، ممکن است به‌جای Push با گزینه‌ای مانند **Publish repository** مواجه شوید.
+
+![تصویر GitHub Desktop](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/3.png)
+
+## آشنایی با اصطلاحات اصلی
 
 ### Clone
 
-Downloads a repository from a remote location to your computer, including its Git history.
+مخزن را از یک محل راه دور، مانند GitHub، روی کامپیوتر شما دریافت می‌کند و تاریخچهٔ Git آن را نیز همراه با فایل‌ها دانلود می‌کند.
 
 ### Commit
 
-Records a snapshot of the staged changes in your local Git repository.
+یک Snapshot یا نقطهٔ ثبت‌شده از تغییرات آمادهٔ ثبت را در مخزن محلی Git ذخیره می‌کند.
 
-A commit is similar to saving a meaningful checkpoint in your project's history.
+به زبان ساده، Commit مانند ثبت یک مرحلهٔ مشخص از پیشرفت پروژه است؛ با این تفاوت که تاریخچه‌ای از تغییرات نیز ایجاد می‌شود.
 
 ### Push
 
-Uploads your local commits to a remote repository, such as the one hosted on GitHub.
+Commitهای محلی را به مخزن راه دور، مانند مخزن میزبانی‌شده در GitHub، ارسال می‌کند.
 
-![P4](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/4.jpg)
+### Pull
 
-> **Important:** A commit does not automatically upload your changes to GitHub. You generally need to push your commits to publish them to the remote repository.
+تغییرات مخزن راه دور را دریافت می‌کند و آن‌ها را با شاخهٔ محلی فعلی ادغام می‌کند.
+
+### Fetch
+
+اطلاعات مربوط به تغییرات مخزن راه دور را دریافت می‌کند، اما به‌صورت خودکار آن تغییرات را وارد شاخهٔ فعلی نمی‌کند.
+
+> **نکتهٔ مهم:** اجرای Commit به‌تنهایی تغییرات را به GitHub ارسال نمی‌کند. برای انتشار Commitهای محلی در مخزن آنلاین، معمولاً باید آن‌ها را Push کنید.
+
+![تصویر مفاهیم Git و GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/4.jpg)
 
 ---
 
-# GitHub Organizations
+# سازمان‌ها در GitHub
 
-A GitHub Organization is a shared account structure designed for companies, startups, educational groups, and development teams.
+**GitHub Organization** ساختاری برای مدیریت مشترک حساب‌ها و مخازن است که برای شرکت‌ها، استارتاپ‌ها، گروه‌های آموزشی و تیم‌های توسعه طراحی شده است.
 
-Organizations make it easier to manage repositories, control access, assign responsibilities, and collaborate across multiple projects.
+با استفاده از سازمان‌ها می‌توان مخازن را مدیریت کرد، سطح دسترسی اعضا را تعیین کرد، مسئولیت‌ها را مشخص کرد و همکاری میان چندین توسعه‌دهنده را ساده‌تر کرد.
 
-## Creating an Organization
+## ساخت یک Organization
 
-1. Sign in to GitHub.
-2. Open your account menu and navigate to the organization creation option in GitHub's settings.
-3. Choose **New organization**.
-4. Select an appropriate plan.
-5. Enter the required organization details.
-6. Invite team members and configure repository access.
+۱. وارد حساب GitHub خود شوید.
 
-You can start with a free plan when its available features meet your needs.
+۲. از منوی حساب کاربری وارد بخش تنظیمات مربوط به سازمان‌ها شوید.
 
-## Organization Roles
+۳. گزینهٔ **New organization** را انتخاب کنید.
 
-Organization roles determine what members can do within the organization.
+۴. طرح اشتراک متناسب با نیاز خود را انتخاب کنید.
 
-Common roles include:
+۵. اطلاعات موردنیاز سازمان را وارد کنید.
 
-- **Owner:** Has administrative control over the organization and its settings.
-- **Member:** Has standard organization membership and access to resources according to assigned permissions.
-- **Outside Collaborator:** Can be granted access to specific repositories without becoming an organization member.
+۶. اعضای تیم را دعوت کنید و سطح دسترسی آن‌ها به مخازن را تنظیم کنید.
 
-Additional roles and permissions may be available depending on the organization's configuration and GitHub plan.
+اگر امکانات طرح رایگان نیازهای شما را پوشش می‌دهد، می‌توانید کار را با همان طرح آغاز کنید.
 
-Always grant people only the permissions they need.
+## نقش‌های اعضای سازمان
 
-## Creating an Organization Profile README
+نقش‌های سازمان مشخص می‌کنند هر عضو چه اختیاراتی در سازمان داشته باشد.
 
-You can display a README on an organization's public profile.
+نقش‌های رایج عبارت‌اند از:
 
-Follow these steps:
+- **Owner:** دسترسی مدیریتی گسترده به سازمان و تنظیمات آن دارد.
+- **Member:** عضو عادی سازمان است و بر اساس مجوزهای تعیین‌شده به منابع دسترسی دارد.
+- **Outside Collaborator:** می‌تواند به مخازن مشخصی دسترسی داشته باشد، بدون اینکه عضو سازمان محسوب شود.
 
-1. Create a public repository named `.github` within the organization.
-2. Inside that repository, create a directory named `profile`.
-3. Add a `README.md` file inside the `profile` directory.
-4. Write an introduction to the organization, its goals, projects, and contribution guidelines.
+نقش‌ها و مجوزهای دیگری نیز ممکن است بر اساس تنظیمات سازمان و طرح GitHub در دسترس باشند.
 
-The resulting structure should look like this:
+همیشه تلاش کنید هر فرد فقط مجوزهایی را داشته باشد که برای انجام وظایف خود به آن‌ها نیاز دارد.
+
+## ساخت Profile README برای سازمان
+
+می‌توانید برای صفحهٔ عمومی سازمان نیز یک README اختصاصی ایجاد کنید.
+
+مراحل انجام کار:
+
+۱. در سازمان خود یک مخزن عمومی با نام `.github` بسازید.
+
+۲. داخل این مخزن، پوشه‌ای با نام `profile` ایجاد کنید.
+
+۳. درون پوشهٔ `profile` فایلی به نام `README.md` قرار دهید.
+
+۴. در این فایل، سازمان، اهداف، پروژه‌ها و راهنمای مشارکت را معرفی کنید.
+
+ساختار فایل‌ها باید به این صورت باشد:
 
 ```text
 .github/
@@ -620,300 +694,340 @@ The resulting structure should look like this:
     └── README.md
 ```
 
-GitHub can display this README on the organization's profile page.
+GitHub می‌تواند محتوای این README را در صفحهٔ عمومی سازمان نمایش دهد.
 
-![P5](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/5.png)
+![تصویر Organization در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/5.png)
 
 ---
 
 # GitHub Pages
 
-[GitHub Pages](https://pages.github.com/) is a hosting service that allows you to publish static websites directly from a GitHub repository.
+[GitHub Pages](https://pages.github.com/) یک سرویس میزبانی وب است که به شما اجازه می‌دهد وب‌سایت‌های ایستا (Static Websites) را مستقیماً از یک مخزن GitHub منتشر کنید.
 
-It is useful for personal websites, portfolios, project documentation, and landing pages.
+این سرویس برای ساخت وب‌سایت شخصی، رزومهٔ آنلاین، پورتفولیو، مستندات پروژه و صفحات معرفی محصولات بسیار کاربردی است.
 
-GitHub Pages primarily supports static content such as HTML, CSS, and JavaScript. It does not directly run server-side applications such as a conventional PHP or Node.js backend.
+GitHub Pages عمدتاً از محتوای ایستا مانند HTML، CSS و JavaScript پشتیبانی می‌کند و به‌طور مستقیم برای اجرای برنامه‌های سمت سرور، مانند یک Backend معمولی مبتنی بر PHP یا Node.js، طراحی نشده است.
 
-## Creating a GitHub Pages Website
+## ساخت وب‌سایت با GitHub Pages
 
-1. Create a repository on GitHub.
-2. Add your website files, including an `index.html` file.
-3. Open the repository's **Settings**.
-4. Select **Pages** from the sidebar.
-5. Under the build and deployment settings, select the appropriate publishing source, such as a branch and folder, or configure GitHub Actions.
-6. Save the settings and wait for the site to be published.
+۱. یک مخزن در GitHub ایجاد کنید.
 
-## Understanding GitHub Pages URLs
+۲. فایل‌های وب‌سایت خود، از جمله `index.html`، را در مخزن قرار دهید.
 
-There are two common types of GitHub Pages websites.
+۳. وارد بخش **Settings** مخزن شوید.
 
-### 1. User or Organization Website
+۴. از منوی کناری، گزینهٔ **Pages** را انتخاب کنید.
 
-Create a repository named exactly:
+۵. در بخش Build and deployment، روش انتشار مناسب را انتخاب کنید؛ برای مثال، انتشار از یک Branch و پوشهٔ مشخص یا استفاده از GitHub Actions.
+
+۶. تنظیمات را ذخیره کنید و منتظر بمانید تا وب‌سایت منتشر شود.
+
+## آشنایی با آدرس‌های GitHub Pages
+
+وب‌سایت‌های GitHub Pages معمولاً در دو دسته قرار می‌گیرند.
+
+### ۱. وب‌سایت شخصی یا سازمانی
+
+نام مخزن باید دقیقاً به این شکل باشد:
 
 ```text
 your-username.github.io
 ```
 
-The website will normally be available at:
+آدرس وب‌سایت معمولاً به شکل زیر خواهد بود:
 
 ```text
 https://your-username.github.io/
 ```
 
-Replace `your-username` with your actual GitHub username.
+به‌جای `your-username` نام کاربری GitHub خود را قرار دهید.
 
-### 2. Project Website
+### ۲. وب‌سایت مربوط به یک پروژه
 
-Create a repository with a regular name, such as:
+می‌توانید نام عادی برای مخزن انتخاب کنید؛ برای مثال:
 
 ```text
 my-project
 ```
 
-The website will normally be available at:
+آدرس وب‌سایت معمولاً به این شکل خواهد بود:
 
 ```text
 https://your-username.github.io/my-project/
 ```
 
-Replace the example username and repository name with your own.
+در این آدرس، نام کاربری و نام مخزن خود را جایگزین مقادیر نمونه کنید.
 
-> **Note:** The final URL depends on your GitHub account or organization, repository configuration, and publishing settings. Custom domains are also supported.
+> **نکته:** آدرس نهایی به حساب کاربری یا سازمان، نام مخزن و تنظیمات انتشار بستگی دارد. همچنین می‌توانید از دامنهٔ اختصاصی خود استفاده کنید.
 
-GitHub Pages is an excellent option for publishing a developer portfolio without managing your own web server.
+GitHub Pages گزینه‌ای مناسب برای انتشار پورتفولیو و وب‌سایت‌های شخصی است؛ بدون اینکه نیازی به مدیریت یک سرور وب مستقل داشته باشید.
 
-![P6](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/6.png)
-
----
-
-# GitHub Issues
-
-GitHub Issues is a tool for tracking bugs, requesting features, asking questions, and organizing work related to a repository.
-
-Although issues support discussion and comments, they are more than ordinary comments: each issue represents a task or topic that can be assigned, labeled, tracked, and discussed.
-
-## Common Uses
-
-- **Bug Reports:** Describe unexpected behavior or errors.
-- **Feature Requests:** Suggest new functionality.
-- **Questions:** Ask questions about the project.
-- **Task Tracking:** Organize planned work and improvements.
-
-## Writing a Good Issue
-
-A useful issue should be clear, specific, and easy to reproduce when reporting a bug.
-
-For a bug report, include:
-
-1. **Title:** A short description of the problem.
-2. **Description:** Explain what happened.
-3. **Steps to Reproduce:** Describe how to reproduce the issue.
-4. **Expected Behavior:** Explain what should have happened.
-5. **Actual Behavior:** Explain what happened instead.
-6. **Environment:** Include relevant operating system, software version, or other details.
-
-For a feature request, describe the problem the feature would solve and explain why it would be useful.
-
-GitHub Issues supports Markdown, so you can use headings, lists, links, code blocks, and task lists to improve readability.
-
-> **Tip:** Be respectful, professional, and specific. A clear issue saves time for everyone involved.
+![تصویر GitHub Pages](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/6.png)
 
 ---
 
-# Branches
+# Issues در GitHub
 
-A branch is an independent line of development within a Git repository.
+ابزار **GitHub Issues** برای گزارش باگ‌ها، پیشنهاد قابلیت‌های جدید، طرح پرسش و مدیریت وظایف مرتبط با یک مخزن استفاده می‌شود.
 
-Branches allow developers to work on new features, fix bugs, or experiment with changes without immediately modifying the main development branch.
+Issue صرفاً یک نظر یا کامنت معمولی نیست؛ بلکه موضوع یا وظیفه‌ای است که می‌توان آن را پیگیری کرد، به افراد اختصاص داد، برچسب‌گذاری کرد و دربارهٔ آن گفت‌وگو کرد.
 
-The main branch is commonly named `main`, although repositories may use other names.
+## کاربردهای رایج Issues
 
-## Why Use Branches?
+- **Bug Reports:** گزارش خطاها و رفتارهای غیرمنتظرهٔ نرم‌افزار
+- **Feature Requests:** پیشنهاد قابلیت‌های جدید
+- **Questions:** پرسیدن سؤال دربارهٔ پروژه
+- **Task Tracking:** برنامه‌ریزی و پیگیری وظایف
 
-Imagine that a team is developing a website. One developer is building a login system, while another is fixing a navigation bug.
+## چگونه یک Issue مناسب بنویسیم؟
 
-If both developers work independently on separate branches, they can develop and test their changes without constantly interfering with each other's work.
+هنگام گزارش یک باگ، توضیحات باید دقیق، روشن و تا حد امکان قابل تکرار باشند.
 
-A typical workflow might look like this:
+یک گزارش باگ مناسب بهتر است شامل موارد زیر باشد:
+
+۱. **Title:** عنوانی کوتاه و مشخص دربارهٔ مشکل
+
+۲. **Description:** توضیح مشکل و شرایطی که در آن رخ می‌دهد
+
+۳. **Steps to Reproduce:** مراحل لازم برای بازتولید مشکل
+
+۴. **Expected Behavior:** رفتاری که انتظار داشتید اتفاق بیفتد
+
+۵. **Actual Behavior:** رفتاری که واقعاً اتفاق افتاده است
+
+۶. **Environment:** اطلاعات مرتبط مانند سیستم‌عامل، نسخهٔ نرم‌افزار و محیط اجرا
+
+در درخواست قابلیت جدید نیز بهتر است مشکلی را که قرار است حل شود توضیح دهید و مشخص کنید قابلیت پیشنهادی چه فایده‌ای دارد.
+
+GitHub Issues از Markdown پشتیبانی می‌کند؛ بنابراین می‌توانید از عنوان‌ها، فهرست‌ها، لینک‌ها، بلوک‌های کد و فهرست وظایف برای خواناتر کردن توضیحات استفاده کنید.
+
+> **نکته:** هنگام نوشتن Issue محترمانه، حرفه‌ای و دقیق باشید. یک گزارش واضح می‌تواند زمان زیادی را برای اعضای پروژه ذخیره کند.
+
+---
+
+# شاخه‌ها (Branches)
+
+Branch یا شاخه، یک مسیر مستقل برای توسعهٔ نرم‌افزار درون یک مخزن Git است.
+
+شاخه‌ها به برنامه‌نویسان اجازه می‌دهند قابلیت‌های جدیدی ایجاد کنند، باگ‌ها را برطرف کنند یا تغییرات آزمایشی انجام دهند؛ بدون اینکه مجبور باشند بلافاصله شاخهٔ اصلی پروژه را تغییر دهند.
+
+شاخهٔ اصلی در بسیاری از مخازن `main` نام دارد؛ البته ممکن است در بعضی پروژه‌ها از نام‌های دیگری استفاده شود.
+
+## چرا از Branch استفاده می‌کنیم؟
+
+فرض کنید یک تیم در حال توسعهٔ یک وب‌سایت است. یک برنامه‌نویس روی سیستم ورود کاربران کار می‌کند و برنامه‌نویس دیگری در حال رفع مشکل منوی سایت است.
+
+اگر هرکدام روی شاخه‌ای جداگانه کار کنند، می‌توانند تغییرات خود را مستقل از یکدیگر توسعه دهند و آزمایش کنند.
+
+برای مثال، ساختار شاخه‌ها می‌تواند به شکل زیر باشد:
 
 ```text
 main
- ├── feature/login
- └── fix/navigation
+├── feature/login
+└── fix/navigation
 ```
 
-Each branch can contain its own commits. Once the changes are reviewed and approved, they can be merged into the target branch.
+هر شاخه می‌تواند Commitهای مخصوص به خود را داشته باشد. پس از بررسی و تأیید تغییرات، می‌توان آن‌ها را با شاخهٔ مقصد ادغام کرد.
 
-## Creating a Branch
+## ساخت یک Branch
 
-You can create a branch using GitHub Desktop or the command line.
-A branch is not a separate copy of the entire project in the same sense as a fork. It is a separate line of development within the same repository, sharing the repository's underlying Git history.
+می‌توانید با GitHub Desktop یا خط فرمان Git شاخهٔ جدیدی ایجاد کنید.
 
----
+برای مثال، دستور زیر یک شاخه با نام `feature/login` ایجاد می‌کند و وارد آن می‌شود:
 
-# Pull Requests
+```bash
+git switch -c feature/login
+```
 
-A Pull Request (PR) is a request to review and integrate changes from one branch into another.
+پس از اعمال تغییرات، می‌توانید آن‌ها را ثبت و شاخه را به GitHub ارسال کنید:
 
-For example, after implementing a feature on `feature/login`, you can open a pull request to propose merging it into `main`.
+```bash
+git add .
+git commit -m "Add login feature"
+git push -u origin feature/login
+```
 
-A pull request allows team members to:
-
-- Review code changes.
-- Leave comments and suggestions.
-- Discuss the proposed implementation.
-- Run automated tests and checks.
-- Request changes before integration.
-- Approve the changes when they are ready.
-
-## Creating a Pull Request
-
-1. Create a branch and make your changes.
-2. Commit your changes.
-3. Push the branch to GitHub.
-4. Open the repository on GitHub.
-5. Select **Compare & pull request**, when available, or open the **Pull requests** tab and create a new pull request.
-6. Choose the source branch and the target branch.
-7. Add a descriptive title and explain the changes.
-8. Create the pull request and request a review if needed.
-
-> **Important:** Opening a pull request does not automatically merge the changes. The changes must be merged separately by someone with the necessary permissions.
-
-Pull requests are also useful in open-source projects because contributors can propose changes without needing direct write access to the original repository.
+Branch مانند Fork یک مخزن مستقل نیست؛ بلکه مسیر جداگانه‌ای برای توسعه در همان مخزن است و از تاریخچهٔ Git آن استفاده می‌کند.
 
 ---
 
-# Merge
+# درخواست ادغام (Pull Requests)
 
-Merging combines changes from one branch into another.
+**Pull Request** یا به‌اختصار **PR**، درخواستی برای بررسی تغییرات و ادغام آن‌ها از یک شاخه به شاخه‌ای دیگر است.
 
-For example, after a pull request has been reviewed and approved, a maintainer may merge the feature branch into `main`.
+برای مثال، پس از پیاده‌سازی قابلیت ورود کاربران در شاخهٔ `feature/login`، می‌توانید یک Pull Request ایجاد کنید تا تغییرات پیشنهادی شما برای ادغام در `main` بررسی شوند.
+
+Pull Request به اعضای تیم اجازه می‌دهد:
+
+- تغییرات کد را بررسی کنند.
+- نظرها و پیشنهادهای خود را ثبت کنند.
+- دربارهٔ روش پیاده‌سازی گفت‌وگو کنند.
+- آزمایش‌ها و بررسی‌های خودکار را اجرا کنند.
+- پیش از ادغام، درخواست اصلاح تغییرات بدهند.
+- پس از آماده شدن تغییرات، آن‌ها را تأیید کنند.
+
+## ساخت یک Pull Request
+
+۱. یک Branch ایجاد کنید و تغییرات موردنظر را انجام دهید.
+
+۲. تغییرات خود را Commit کنید.
+
+۳. شاخه را به GitHub Push کنید.
+
+۴. وارد مخزن موردنظر در GitHub شوید.
+
+۵. در صورت نمایش گزینهٔ **Compare & pull request**، روی آن کلیک کنید؛ در غیر این صورت وارد تب **Pull requests** شوید و یک درخواست جدید ایجاد کنید.
+
+۶. شاخهٔ مبدأ و شاخهٔ مقصد را انتخاب کنید.
+
+۷. عنوانی واضح بنویسید و تغییرات انجام‌شده را توضیح دهید.
+
+۸. Pull Request را ایجاد کنید و در صورت نیاز از دیگران درخواست بررسی کنید.
+
+> **نکتهٔ مهم:** ایجاد Pull Request به‌معنای ادغام خودکار تغییرات نیست. تغییرات باید جداگانه و توسط فردی که مجوز لازم را دارد Merge شوند.
+
+Pull Request در پروژه‌های متن‌باز اهمیت ویژه‌ای دارد؛ زیرا توسعه‌دهندگان می‌توانند بدون داشتن دسترسی مستقیم برای نوشتن در مخزن اصلی، تغییرات پیشنهادی خود را ارسال کنند.
+
+---
+
+# ادغام شاخه‌ها (Merge)
+
+Merge فرایندی است که تغییرات یک شاخه را با شاخهٔ دیگری ادغام می‌کند.
+
+برای مثال، پس از بررسی و تأیید یک Pull Request، مدیر پروژه می‌تواند شاخهٔ مربوط به قابلیت جدید را با `main` ادغام کند.
+
+نمایش ساده‌شدهٔ یک Merge:
 
 ```text
-Before merging:
+قبل از ادغام:
 
 main:             A --- B --- C
 feature/login:             \--- D --- E
 
-After merging:
+پس از ادغام:
 
 main:             A --- B --- C --- M
                               \     /
 feature/login:                 D --- E
 ```
 
-This is a simplified illustration of a merge commit. Git can also perform fast-forward merges or use other merge strategies depending on the repository's history and configuration.
+این مثال یک Merge Commit را نشان می‌دهد. Git بسته به تاریخچهٔ مخزن و تنظیمات پروژه می‌تواند از روش‌های دیگری مانند Fast-forward Merge نیز استفاده کند.
 
-![P7](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/7.jpeg)
+![تصویر Merge در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/7.jpeg)
 
-## Common Merge Options on GitHub
+## روش‌های رایج Merge در GitHub
 
 ### Create a Merge Commit
 
-Combines the branches and creates a merge commit that preserves the branching history.
+تغییرات دو شاخه را ادغام می‌کند و یک Merge Commit می‌سازد که تاریخچهٔ شاخه‌بندی پروژه را حفظ می‌کند.
 
 ### Squash and Merge
 
-Combines the pull request's commits into a single commit on the target branch.
+Commitهای مربوط به Pull Request را به یک Commit تبدیل می‌کند و آن را در شاخهٔ مقصد قرار می‌دهد.
 
-This can keep the main branch history more compact.
+این روش می‌تواند تاریخچهٔ شاخهٔ اصلی را خلاصه‌تر و مرتب‌تر نگه دارد.
 
 ### Rebase and Merge
 
-Replays the pull request's commits onto the target branch without creating a merge commit.
+Commitهای Pull Request را روی تاریخچهٔ شاخهٔ مقصد بازپخش می‌کند، بدون اینکه Merge Commit جداگانه‌ای ایجاد شود.
 
-This can produce a linear history, although the resulting commit IDs may differ from the original ones.
+این روش می‌تواند تاریخچه‌ای خطی ایجاد کند؛ هرچند شناسهٔ Commitهای حاصل ممکن است با شناسه‌های قبلی متفاوت باشد.
 
-The appropriate option depends on the project's workflow and contribution guidelines.
+انتخاب روش مناسب به شیوهٔ توسعه، سیاست‌های تیم و دستورالعمل‌های مشارکت در پروژه بستگی دارد.
 
 ---
 
-# Fork
+# فورک (Fork)
 
-A fork is a copy of a repository under another GitHub account or organization.
+Fork نسخه‌ای از یک مخزن است که تحت حساب کاربری یا سازمان دیگری در GitHub ایجاد می‌شود.
 
-Forking is especially useful when contributing to open-source projects where you do not have permission to push directly to the original repository.
+این قابلیت به‌خصوص هنگام مشارکت در پروژه‌های متن‌باز کاربرد دارد؛ زیرا معمولاً برای ایجاد تغییر مستقیم در مخزن اصلی به مجوز نوشتن نیاز دارید.
 
-## How Forking Works
+## فرایند Fork کردن
 
-Imagine that you want to contribute to an open-source project maintained by someone else.
+فرض کنید می‌خواهید در یک پروژهٔ متن‌باز که توسط فرد دیگری مدیریت می‌شود مشارکت کنید.
 
-1. Open the original repository on GitHub.
-2. Click **Fork**.
-3. Choose the destination account or organization.
-4. Clone your fork to your computer.
-5. Create a branch and make your changes.
-6. Commit and push your changes to your fork.
-7. Open a pull request proposing that your changes be merged into the original repository.
+۱. وارد صفحهٔ مخزن اصلی در GitHub شوید.
 
-The workflow can be illustrated as follows:
+۲. روی گزینهٔ **Fork** کلیک کنید.
+
+۳. حساب کاربری یا سازمان مقصد را انتخاب کنید.
+
+۴. مخزن Fork‌شده را روی کامپیوتر خود Clone کنید.
+
+۵. یک Branch ایجاد کنید و تغییرات موردنظر را انجام دهید.
+
+۶. تغییرات را Commit کنید و به Fork خود Push کنید.
+
+۷. یک Pull Request ایجاد کنید و پیشنهاد دهید تغییرات شما با مخزن اصلی ادغام شوند.
+
+نمایش ساده‌شدهٔ این فرایند:
 
 ```text
-Original Repository
-        |
-        | Fork
-        v
-Your Fork
-        |
-        | Clone
-        v
-Your Local Computer
-        |
-        | Edit, Commit, Push
-        v
-Your Fork on GitHub
-        |
-        | Pull Request
-        v
-Original Repository
+مخزن اصلی
+    |
+    | Fork
+    v
+فورک شما
+    |
+    | Clone
+    v
+کامپیوتر شخصی شما
+    |
+    | ویرایش، Commit و Push
+    v
+فورک شما در GitHub
+    |
+    | Pull Request
+    v
+مخزن اصلی
 ```
 
-## Branch vs. Fork
+## تفاوت Branch و Fork
 
-| Feature | Branch | Fork |
+| ویژگی | Branch | Fork |
 |---|---|---|
-| Location | Inside the same repository | A separate repository under another account or organization |
-| Typical use | Team development and feature work | Contributing to projects you do not control |
-| Direct repository access required | Usually requires suitable access to push changes | You can generally fork a public repository without write access |
-| Independent repository permissions | No | Yes |
-| Pull requests | Can be opened between branches | Can be opened from your fork to the original repository |
+| محل قرارگیری | داخل همان مخزن | مخزنی جداگانه در حساب یا سازمان دیگر |
+| کاربرد رایج | توسعهٔ قابلیت‌ها و کار تیمی | مشارکت در پروژه‌هایی که مالک آن‌ها نیستید |
+| نیاز به دسترسی نوشتن در مخزن اصلی | معمولاً برای Push مستقیم لازم است | برای Fork کردن یک مخزن عمومی معمولاً لازم نیست |
+| مجوزهای مستقل مخزن | خیر | بله |
+| Pull Request | بین شاخه‌های مخزن | از Fork به مخزن اصلی |
 
-A fork is a separate repository, but it is not necessarily a permanent or automatically synchronized copy. You may need to fetch changes from the original repository to keep your fork up to date.
+Fork یک مخزن مستقل است؛ اما لزوماً نسخه‌ای نیست که به‌صورت خودکار و دائمی با مخزن اصلی همگام بماند. برای دریافت تغییرات جدید مخزن اصلی، ممکن است لازم باشد آن‌ها را Fetch کرده و Fork خود را به‌روز کنید.
 
-> **Important:** You do not need to be a member of a project to fork its public repository. However, permissions and repository policies may affect the available workflow.
+> **نکتهٔ مهم:** برای Fork کردن یک مخزن عمومی نیازی نیست عضو پروژه باشید. البته سیاست‌های مخزن و سطح دسترسی‌ها ممکن است بر فرایند مشارکت تأثیر بگذارند.
 
----
-
-# Conclusion
-
-GitHub is an essential platform for modern software development. Learning how to use repositories, Markdown, GitHub Desktop, branches, pull requests, and issues will help you manage projects and collaborate with other developers more effectively.
-
-To improve your GitHub profile:
-
-- Keep your repositories organized.
-- Write clear and helpful README files.
-- Choose suitable licenses for your projects.
-- Use `.gitignore` to avoid committing unnecessary files and local secrets.
-- Build a professional profile README.
-- Publish your portfolio using GitHub Pages.
-- Contribute to open-source projects.
-- Use branches and pull requests to develop and review changes.
-
-**The best way to learn GitHub is to use it.** Start with a small project, publish it, improve it over time, and gradually contribute to projects maintained by other developers.
-
-![P8](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/8.jpeg)
+![تصویر Fork در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/8.jpeg)
 
 ---
 
-**Useful Resources**
+# جمع‌بندی
 
-- [GitHub](https://github.com/)
-- [Git Documentation](https://git-scm.com/doc)
-- [GitHub Docs](https://docs.github.com/)
-- [GitHub Skills](https://skills.github.com/)
-- [GitHub Desktop](https://desktop.github.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Choose a License](https://choosealicense.com/)
-- [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
-- [Git Ignore Templates](https://github.com/github/gitignore)
+GitHub یکی از ابزارهای مهم در توسعهٔ نرم‌افزار مدرن است. یادگیری کار با Repository، زبان Markdown، نرم‌افزار GitHub Desktop، شاخه‌ها، Pull Requestها و Issues به شما کمک می‌کند پروژه‌های خود را بهتر مدیریت کنید و با سایر توسعه‌دهندگان همکاری مؤثرتری داشته باشید.
+
+برای ساخت یک پروفایل حرفه‌ای در GitHub:
+
+- مخازن خود را مرتب و سازمان‌دهی کنید.
+- برای پروژه‌ها READMEهای واضح و کاربردی بنویسید.
+- برای پروژه‌های خود مجوز نرم‌افزاری مناسبی انتخاب کنید.
+- از `.gitignore` برای جلوگیری از ثبت فایل‌های غیرضروری و اطلاعات محلی حساس استفاده کنید.
+- یک Profile README حرفه‌ای بسازید.
+- پورتفولیوی خود را با GitHub Pages منتشر کنید.
+- در پروژه‌های متن‌باز مشارکت داشته باشید.
+- برای توسعه و بررسی تغییرات از Branch و Pull Request استفاده کنید.
+
+**بهترین راه یادگیری GitHub، استفادهٔ عملی از آن است.** با یک پروژهٔ کوچک شروع کنید، آن را منتشر کنید، به‌مرور بهبود دهید و سپس در پروژه‌های سایر توسعه‌دهندگان مشارکت کنید.
+
+---
+
+# منابع مفید
+
+- [وب‌سایت GitHub](https://github.com/)
+- [مستندات Git](https://git-scm.com/doc)
+- [مستندات رسمی GitHub](https://docs.github.com/)
+- [آموزش‌های تعاملی GitHub Skills](https://skills.github.com/)
+- [دانلود GitHub Desktop](https://desktop.github.com/)
+- [وب‌سایت GitHub Pages](https://pages.github.com/)
+- [انتخاب مجوز نرم‌افزاری](https://choosealicense.com/)
+- [مستندات GitHub Flavored Markdown](https://github.github.com/gfm/)
+- [قالب‌های `.gitignore`](https://github.com/github/gitignore)
