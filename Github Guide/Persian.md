@@ -468,7 +468,7 @@ GitHub اجازه می‌دهد از برخی تگ‌های HTML در فایل�
 
 برای یادگیری بیشتر به [مستندات GitHub Flavored Markdown](https://github.github.com/gfm/) مراجعه کنید.
 
-![تصویر آموزش Markdown](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/1.png)
+![تصویر ۱](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/1.png)
 
 ---
 
@@ -550,7 +550,7 @@ GitHub اجازه می‌دهد از برخی تگ‌های HTML در فایل�
 
 > **نکته:** فایل Profile README را مختصر، منظم و به‌روز نگه دارید. مهم‌ترین مهارت‌ها و بهترین پروژه‌های شما باید به‌راحتی قابل مشاهده باشند.
 
-![نمونه رزومه در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/2.png)
+![تصویر ۲](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/2.png)
 
 ---
 
@@ -604,8 +604,7 @@ GitHub اجازه می‌دهد از برخی تگ‌های HTML در فایل�
 
 اگر مخزن هنوز روی GitHub منتشر نشده باشد، ممکن است به‌جای Push با گزینه‌ای مانند **Publish repository** مواجه شوید.
 
-![تصویر GitHub Desktop](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/3.png)
-
+![تصویر ۳](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/3.png)
 ## آشنایی با اصطلاحات اصلی
 
 ### Clone
@@ -632,7 +631,7 @@ Commitهای محلی را به مخزن راه دور، مانند مخزن م�
 
 > **نکتهٔ مهم:** اجرای Commit به‌تنهایی تغییرات را به GitHub ارسال نمی‌کند. برای انتشار Commitهای محلی در مخزن آنلاین، معمولاً باید آن‌ها را Push کنید.
 
-![تصویر مفاهیم Git و GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/4.jpg)
+![تصویر ۴](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/4.jpg)
 
 ---
 
@@ -696,7 +695,7 @@ Commitهای محلی را به مخزن راه دور، مانند مخزن م�
 
 GitHub می‌تواند محتوای این README را در صفحهٔ عمومی سازمان نمایش دهد.
 
-![تصویر Organization در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/5.png)
+![تصویر ۵](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/5.png)
 
 ---
 
@@ -762,7 +761,7 @@ https://your-username.github.io/my-project/
 
 GitHub Pages گزینه‌ای مناسب برای انتشار پورتفولیو و وب‌سایت‌های شخصی است؛ بدون اینکه نیازی به مدیریت یک سرور وب مستقل داشته باشید.
 
-![تصویر GitHub Pages](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/6.png)
+![تصویر ۶](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/6.png)
 
 ---
 
@@ -913,7 +912,7 @@ feature/login:                 D --- E
 
 این مثال یک Merge Commit را نشان می‌دهد. Git بسته به تاریخچهٔ مخزن و تنظیمات پروژه می‌تواند از روش‌های دیگری مانند Fast-forward Merge نیز استفاده کند.
 
-![تصویر Merge در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/7.jpeg)
+![تصویر ۷](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/7.jpeg)
 
 ## روش‌های رایج Merge در GitHub
 
@@ -997,7 +996,7 @@ Fork یک مخزن مستقل است؛ اما لزوماً نسخه‌ای نی�
 
 > **نکتهٔ مهم:** برای Fork کردن یک مخزن عمومی نیازی نیست عضو پروژه باشید. البته سیاست‌های مخزن و سطح دسترسی‌ها ممکن است بر فرایند مشارکت تأثیر بگذارند.
 
-![تصویر Fork در GitHub](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/8.jpeg)
+![تصویر ۸](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/8.jpeg)
 
 ---
 
