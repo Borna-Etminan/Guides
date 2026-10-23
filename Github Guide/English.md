@@ -428,7 +428,7 @@ However, not every HTML element or attribute is supported. GitHub sanitizes rend
 
 For more information, visit the [GitHub Flavored Markdown documentation](https://github.github.com/gfm/).
 
-![P1](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/1.png)
+![تصویر ۱](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/1.png)
 
 ---
 
@@ -504,7 +504,7 @@ Add professional ways for people to contact you, such as:
 Avoid publishing sensitive personal information.
 
 > **Tip:** Keep your profile README concise, organized, and up to date. Your strongest projects and most relevant skills should be easy to find.
-![P2](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/2.png)
+![تصویر ۲](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/2.png)
 
 ---
 
@@ -546,7 +546,7 @@ After cloning a repository:
 
 If you have not pushed your changes before, the application may show **Publish repository** or another publishing-related option instead.
 
-![P3](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/3.png)
+![تصویر ۳](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/3.png)
 
 ## Understanding the Main Terms
 
@@ -564,7 +564,7 @@ A commit is similar to saving a meaningful checkpoint in your project's history.
 
 Uploads your local commits to a remote repository, such as the one hosted on GitHub.
 
-![P4](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/4.jpg)
+![تصویر ۴](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/4.jpg)
 
 > **Important:** A commit does not automatically upload your changes to GitHub. You generally need to push your commits to publish them to the remote repository.
 
@@ -622,8 +622,7 @@ The resulting structure should look like this:
 
 GitHub can display this README on the organization's profile page.
 
-![P5](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/5.png)
-
+![تصویر ۵](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/5.png)
 ---
 
 # GitHub Pages
@@ -683,7 +682,7 @@ Replace the example username and repository name with your own.
 
 GitHub Pages is an excellent option for publishing a developer portfolio without managing your own web server.
 
-![P6](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/6.png)
+![تصویر ۶](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/6.png)
 
 ---
 
@@ -805,7 +804,7 @@ feature/login:                 D --- E
 
 This is a simplified illustration of a merge commit. Git can also perform fast-forward merges or use other merge strategies depending on the repository's history and configuration.
 
-![P7](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/7.jpeg)
+![تصویر ۷](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/7.jpeg)
 
 ## Common Merge Options on GitHub
 
@@ -902,7 +901,7 @@ To improve your GitHub profile:
 
 **The best way to learn GitHub is to use it.** Start with a small project, publish it, improve it over time, and gradually contribute to projects maintained by other developers.
 
-![P8](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/8.jpeg)
+![تصویر ۸](https://raw.githubusercontent.com/Borna-Etminan/Guides/main/Github%20Guide/assets/8.jpeg)
 
 ---
 
