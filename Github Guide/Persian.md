@@ -429,6 +429,7 @@ However, not every HTML element or attribute is supported. GitHub sanitizes rend
 For more information, visit the [GitHub Flavored Markdown documentation](https://github.github.com/gfm/).
 
 ![P1](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/1.png)
+
 ---
 
 # Writing Your Resume on GitHub
@@ -503,6 +504,7 @@ Add professional ways for people to contact you, such as:
 Avoid publishing sensitive personal information.
 
 > **Tip:** Keep your profile README concise, organized, and up to date. Your strongest projects and most relevant skills should be easy to find.
+![P2](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/2.png)
 
 ---
 
@@ -544,6 +546,8 @@ After cloning a repository:
 
 If you have not pushed your changes before, the application may show **Publish repository** or another publishing-related option instead.
 
+![P3](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/3.png)
+
 ## Understanding the Main Terms
 
 ### Clone
@@ -560,13 +564,7 @@ A commit is similar to saving a meaningful checkpoint in your project's history.
 
 Uploads your local commits to a remote repository, such as the one hosted on GitHub.
 
-### Pull
-
-Downloads and integrates changes from a remote repository into your local branch.
-
-### Fetch
-
-Checks for and downloads information about remote changes without automatically integrating those changes into your current branch.
+![P4](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/4.jpg)
 
 > **Important:** A commit does not automatically upload your changes to GitHub. You generally need to push your commits to publish them to the remote repository.
 
@@ -623,6 +621,8 @@ The resulting structure should look like this:
 ```
 
 GitHub can display this README on the organization's profile page.
+
+![P5](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/5.png)
 
 ---
 
@@ -682,6 +682,8 @@ Replace the example username and repository name with your own.
 > **Note:** The final URL depends on your GitHub account or organization, repository configuration, and publishing settings. Custom domains are also supported.
 
 GitHub Pages is an excellent option for publishing a developer portfolio without managing your own web server.
+
+![P6](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/6.png)
 
 ---
 
@@ -746,21 +748,6 @@ Each branch can contain its own commits. Once the changes are reviewed and appro
 ## Creating a Branch
 
 You can create a branch using GitHub Desktop or the command line.
-
-```bash
-git switch -c feature/login
-```
-
-This command creates a new branch named `feature/login` and switches to it.
-
-After making changes, you can commit them and push the branch to GitHub.
-
-```bash
-git add .
-git commit -m "Add login feature"
-git push -u origin feature/login
-```
-
 A branch is not a separate copy of the entire project in the same sense as a fork. It is a separate line of development within the same repository, sharing the repository's underlying Git history.
 
 ---
@@ -817,6 +804,8 @@ feature/login:                 D --- E
 ```
 
 This is a simplified illustration of a merge commit. Git can also perform fast-forward merges or use other merge strategies depending on the repository's history and configuration.
+
+![P7](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/7.jpeg)
 
 ## Common Merge Options on GitHub
 
@@ -912,6 +901,8 @@ To improve your GitHub profile:
 - Use branches and pull requests to develop and review changes.
 
 **The best way to learn GitHub is to use it.** Start with a small project, publish it, improve it over time, and gradually contribute to projects maintained by other developers.
+
+![P8](https://github.com/Borna-Etminan/Guides/blob/main/Github%20Guide/assets/8.jpeg)
 
 ---
 
